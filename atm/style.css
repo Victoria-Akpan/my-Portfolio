@@ -1,0 +1,220 @@
+
+:root {
+--bg-color: #22354a;
+--result-color: green;
+--text-color: white;
+--keyboard-color: #303B47;
+--btn-color: #3b444e;
+}
+
+.light-theme {
+    --bg-color: #dfe5eb;
+    --result-color: rgb(224, 80, 80);
+    --keyboard-color: rgb(235, 239, 243);
+    --text-color: black;
+    --btn-color: #dfe5eb;
+}
+
+
+
+body{
+background: var(--bg-color);
+padding: 50px;
+justify-content: center;
+height: auto;
+}
+
+*{
+   box-sizing: border-box; 
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+
+
+.topPart{
+    width: 450px;
+    margin: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 0;
+    background: var(--keyboard-color);  
+    box-shadow: 5px 5px 15px #888888;
+}
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+
+
+
+
+  #inputs {
+    padding: 10px;
+    
+}
+
+
+#btnWithdraw {
+    width: 8em;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+
+
+}
+
+
+#userWithdraw {
+    height: 40px;
+    width: 10em;
+}
+
+
+#btnTransfer {
+    width: 8em;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+
+
+}
+
+#userTransfer {
+    height: 40px;
+    width: 10em;
+}
+
+#btnDeposit {
+    width: 8em;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+
+
+}
+
+#userDeposit {
+    height: 40px;
+    width: 10em;
+}
+
+
+
+
+
+.button {
+    background-color: var(--keyboard-color);
+    border-width: 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.serv {
+
+    display: flex;
+    justify-content: space-around;
+    border-width: 2px;
+}
+.accts {
+    display: flex;
+    justify-content: right;
+    border-width: 2px;
+
+}
+
+.amts {
+    display: flex;
+    justify-content: space-around;
+}
+#sideA {
+    text-align: left;
+    font-size: 20px;
+
+}
+
+#sideB {
+    text-align: left;
+    font-size: 20px;
+    ;
+
+}
+
+
+
+.keyboard{
+    width: 400px;
+    margin: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 0;
+    background: var(--keyboard-color);  
+    box-shadow: 5px 5px 15px #888888;
+}
+
+input[type=text] {
+   width: 100%;
+   height: 300px;
+   padding: 10px;
+   font-size: 30px; 
+   font-weight: bold;
+   margin-top: 20px;
+   border-radius: 0px;
+   background: var(--keyboard-color);
+   color: var(--result-color);
+   box-shadow: 2px 1px 1px #888888;
+   border: 0.001px;
+}
+
+input[type=button] {
+    width: 89px;
+    height: 60px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10PX;
+    align-items: center;
+    box-shadow: 50px;
+    cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color);
+    box-shadow: 2px 1px 1px #888888;
+}
